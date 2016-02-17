@@ -46,12 +46,12 @@
 0000018: 00                                         ; func flags
 0000019: 0200                                       ; func signature index
 000001b: 0000                                       ; func body size
-000001d: 13                                         ; OPCODE_CALL_INDIRECT
-000001e: 00                                         ; signature index
-000001f: 09                                         ; OPCODE_I8_CONST
-0000020: 00                                         ; u8 literal
-0000021: 0d                                         ; OPCODE_F32_CONST
-0000022: 0000 803f                                  ; f32 literal
+000001d: 09                                         ; OPCODE_I8_CONST
+000001e: 00                                         ; u8 literal
+000001f: 0d                                         ; OPCODE_F32_CONST
+0000020: 0000 803f                                  ; f32 literal
+0000024: 13                                         ; OPCODE_CALL_INDIRECT
+0000025: 00                                         ; signature index
 000001b: 0900                                       ; FIXUP func body size
 0000026: 05                                         ; WASM_SECTION_FUNCTION_TABLE
 0000027: 01                                         ; num function table entries
@@ -63,6 +63,6 @@
 000002e: 00                                         ; \0
 ;; dump
 0000000: 0103 0100 0300 0100 0002 0303 0100 2b00  
-0000010: 0000 0000 0001 0000 0002 0009 0013 0009  
-0000020: 000d 0000 803f 0501 0100 0662 6172 00    
+0000010: 0000 0000 0001 0000 0002 0009 0009 000d  
+0000020: 0000 803f 1300 0501 0100 0662 6172 00    
 ;;; STDOUT ;;)

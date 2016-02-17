@@ -17,16 +17,17 @@
 0000007: 0000                                       ; func signature index
 0000009: 0000                                       ; func body size
 000000b: 02                                         ; OPCODE_LOOP
-000000c: 01                                         ; num expressions
-000000d: 03                                         ; OPCODE_IF
-000000e: 09                                         ; OPCODE_I8_CONST
-000000f: 01                                         ; u8 literal
+000000c: 09                                         ; OPCODE_I8_CONST
+000000d: 01                                         ; u8 literal
+000000e: 03                                         ; OPCODE_IF
+000000f: 00                                         ; OPCODE_NOP
 0000010: 06                                         ; OPCODE_BR
 0000011: 00                                         ; break depth
-0000012: 00                                         ; OPCODE_NOP
-0000009: 0800                                       ; FIXUP func body size
-0000013: 06                                         ; WASM_SECTION_END
+0000012: 17                                         ; OPCODE_END
+0000013: 17                                         ; OPCODE_END
+0000009: 0900                                       ; FIXUP func body size
+0000014: 06                                         ; WASM_SECTION_END
 ;; dump
-0000000: 0101 0000 0201 0000 0008 0002 0103 0901  
-0000010: 0600 0006                                
+0000000: 0101 0000 0201 0000 0009 0002 0901 0300  
+0000010: 0600 1717 06                             
 ;;; STDOUT ;;)

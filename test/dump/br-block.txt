@@ -24,34 +24,34 @@
 0000007: 0000                                       ; func signature index
 0000009: 0000                                       ; func body size
 000000b: 01                                         ; OPCODE_BLOCK
-000000c: 01                                         ; num expressions
-000000d: 02                                         ; OPCODE_LOOP
-000000e: 01                                         ; num expressions
-000000f: 01                                         ; OPCODE_BLOCK
-0000010: 02                                         ; num expressions
-0000011: 09                                         ; OPCODE_I8_CONST
-0000012: 00                                         ; u8 literal
-0000013: 01                                         ; OPCODE_BLOCK
-0000014: 05                                         ; num expressions
+000000c: 02                                         ; OPCODE_LOOP
+000000d: 01                                         ; OPCODE_BLOCK
+000000e: 09                                         ; OPCODE_I8_CONST
+000000f: 00                                         ; u8 literal
+0000010: 01                                         ; OPCODE_BLOCK
+0000011: 00                                         ; OPCODE_NOP
+0000012: 06                                         ; OPCODE_BR
+0000013: 00                                         ; break depth
+0000014: 00                                         ; OPCODE_NOP
 0000015: 06                                         ; OPCODE_BR
 0000016: 00                                         ; break depth
 0000017: 00                                         ; OPCODE_NOP
 0000018: 06                                         ; OPCODE_BR
-0000019: 00                                         ; break depth
+0000019: 01                                         ; break depth
 000001a: 00                                         ; OPCODE_NOP
 000001b: 06                                         ; OPCODE_BR
-000001c: 01                                         ; break depth
+000001c: 02                                         ; break depth
 000001d: 00                                         ; OPCODE_NOP
 000001e: 06                                         ; OPCODE_BR
-000001f: 02                                         ; break depth
-0000020: 00                                         ; OPCODE_NOP
-0000021: 06                                         ; OPCODE_BR
-0000022: 03                                         ; break depth
-0000023: 00                                         ; OPCODE_NOP
+000001f: 03                                         ; break depth
+0000020: 17                                         ; OPCODE_END
+0000021: 17                                         ; OPCODE_END
+0000022: 17                                         ; OPCODE_END
+0000023: 17                                         ; OPCODE_END
 0000009: 1900                                       ; FIXUP func body size
 0000024: 06                                         ; WASM_SECTION_END
 ;; dump
-0000000: 0101 0000 0201 0000 0019 0001 0102 0101  
-0000010: 0209 0001 0506 0000 0600 0006 0100 0602  
-0000020: 0006 0300 06                             
+0000000: 0101 0000 0201 0000 0019 0001 0201 0900  
+0000010: 0100 0600 0006 0000 0601 0006 0200 0603  
+0000020: 1717 1717 06                             
 ;;; STDOUT ;;)

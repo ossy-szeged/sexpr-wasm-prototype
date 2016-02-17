@@ -25,22 +25,22 @@
 0000009: 0000                                       ; func signature index
 000000b: 0000                                       ; func body size
 000000d: 01                                         ; OPCODE_BLOCK
-000000e: 03                                         ; num expressions
+000000e: 00                                         ; OPCODE_NOP
 000000f: 00                                         ; OPCODE_NOP
 0000010: 00                                         ; OPCODE_NOP
-0000011: 00                                         ; OPCODE_NOP
+0000011: 17                                         ; OPCODE_END
 000000b: 0500                                       ; FIXUP func body size
 ; function 1
 0000012: 00                                         ; func flags
 0000013: 0100                                       ; func signature index
 0000015: 0000                                       ; func body size
 0000017: 01                                         ; OPCODE_BLOCK
-0000018: 01                                         ; num expressions
-0000019: 09                                         ; OPCODE_I8_CONST
-000001a: 01                                         ; u8 literal
+0000018: 09                                         ; OPCODE_I8_CONST
+0000019: 01                                         ; u8 literal
+000001a: 17                                         ; OPCODE_END
 0000015: 0400                                       ; FIXUP func body size
 000001b: 06                                         ; WASM_SECTION_END
 ;; dump
-0000000: 0102 0000 0001 0202 0000 0005 0001 0300  
-0000010: 0000 0001 0004 0001 0109 0106            
+0000000: 0102 0000 0001 0202 0000 0005 0001 0000  
+0000010: 0017 0001 0004 0001 0901 1706            
 ;;; STDOUT ;;)

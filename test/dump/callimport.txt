@@ -30,12 +30,12 @@
 0000011: 00                                         ; func flags
 0000012: 0100                                       ; func signature index
 0000014: 0000                                       ; func body size
-0000016: 12                                         ; OPCODE_CALL_FUNCTION
-0000017: 00                                         ; import index
-0000018: 09                                         ; OPCODE_I8_CONST
-0000019: 01                                         ; u8 literal
-000001a: 0d                                         ; OPCODE_F32_CONST
-000001b: 0000 0040                                  ; f32 literal
+0000016: 09                                         ; OPCODE_I8_CONST
+0000017: 01                                         ; u8 literal
+0000018: 0d                                         ; OPCODE_F32_CONST
+0000019: 0000 0040                                  ; f32 literal
+000001d: 12                                         ; OPCODE_CALL_FUNCTION
+000001e: 00                                         ; import index
 000001f: 12                                         ; OPCODE_CALL_FUNCTION
 0000020: 01                                         ; func index
 0000014: 0b00                                       ; FIXUP func body size
@@ -46,6 +46,6 @@
 0000025: 00                                         ; \0
 ;; dump
 0000000: 0102 0201 0103 0001 0202 0300 0022 0000  
-0000010: 0000 0100 0b00 1200 0901 0d00 0000 4012  
+0000010: 0000 0100 0b00 0901 0d00 0000 4012 0012  
 0000020: 0106 6261 7200                           
 ;;; STDOUT ;;)

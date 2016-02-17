@@ -18,22 +18,22 @@
 0000006: 00                                         ; func flags
 0000007: 0000                                       ; func signature index
 0000009: 0000                                       ; func body size
-000000b: ad                                         ; OPCODE_F32_REINTERPRET_I32
-000000c: 09                                         ; OPCODE_I8_CONST
-000000d: 00                                         ; u8 literal
-000000e: b4                                         ; OPCODE_I32_REINTERPRET_F32
-000000f: 0d                                         ; OPCODE_F32_CONST
-0000010: 0000 0000                                  ; f32 literal
-0000014: b3                                         ; OPCODE_F64_REINTERPRET_I64
-0000015: 0b                                         ; OPCODE_I64_CONST
-0000016: 0000 0000 0000 0000                        ; u64 literal
-000001e: b5                                         ; OPCODE_I64_REINTERPRET_F64
-000001f: 0c                                         ; OPCODE_F64_CONST
-0000020: 0000 0000 0000 0000                        ; f64 literal
+000000b: 09                                         ; OPCODE_I8_CONST
+000000c: 00                                         ; u8 literal
+000000d: ad                                         ; OPCODE_F32_REINTERPRET_I32
+000000e: 0d                                         ; OPCODE_F32_CONST
+000000f: 0000 0000                                  ; f32 literal
+0000013: b4                                         ; OPCODE_I32_REINTERPRET_F32
+0000014: 0b                                         ; OPCODE_I64_CONST
+0000015: 0000 0000 0000 0000                        ; u64 literal
+000001d: b3                                         ; OPCODE_F64_REINTERPRET_I64
+000001e: 0c                                         ; OPCODE_F64_CONST
+000001f: 0000 0000 0000 0000                        ; f64 literal
+0000027: b5                                         ; OPCODE_I64_REINTERPRET_F64
 0000009: 1d00                                       ; FIXUP func body size
 0000028: 06                                         ; WASM_SECTION_END
 ;; dump
-0000000: 0101 0000 0201 0000 001d 00ad 0900 b40d  
-0000010: 0000 0000 b30b 0000 0000 0000 0000 b50c  
-0000020: 0000 0000 0000 0000 06                   
+0000000: 0101 0000 0201 0000 001d 0009 00ad 0d00  
+0000010: 0000 00b4 0b00 0000 0000 0000 00b3 0c00  
+0000020: 0000 0000 0000 00b5 06                   
 ;;; STDOUT ;;)

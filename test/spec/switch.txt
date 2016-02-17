@@ -1,10 +1,18 @@
+;;; ERROR: 1
 ;;; EXE: test/run-d8.py
 ;;; FLAGS: --spec
 ;;; STDIN_FILE: third_party/testsuite/switch.wast
+(;; STDERR ;;;
+
+;;; STDERR ;;)
 (;; STDOUT ;;;
 assert_invalid error:
   third_party/testsuite/switch.wast:110:72: case variable out of range (max 0)
 assert_invalid error:
   third_party/testsuite/switch.wast:111:72: case variable out of range (max 1)
-18/18 tests passed.
+WasmModule::Instantiate(): Compiling WASM function #2:corner failed:Result = tableswitch with < 2 entries @+2
+
+  var module = _WASMEXP_.instantiateModule(u8a.buffer, ffi);
+                         ^
+
 ;;; STDOUT ;;)

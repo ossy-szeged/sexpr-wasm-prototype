@@ -1,6 +1,14 @@
+;;; ERROR: 1
 ;;; EXE: test/run-d8.py
 ;;; FLAGS: --spec
 ;;; STDIN_FILE: third_party/testsuite/unreachable.wast
+(;; STDERR ;;;
+
+;;; STDERR ;;)
 (;; STDOUT ;;;
-8/8 tests passed.
+WasmModule::Instantiate(): Compiling WASM function #6:misc1 failed:Result = I32Xor[0] expected type i32, found Unreachable of type <end> @+3
+
+  var module = _WASMEXP_.instantiateModule(u8a.buffer, ffi);
+                         ^
+
 ;;; STDOUT ;;)

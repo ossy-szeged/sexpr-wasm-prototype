@@ -30,35 +30,35 @@
 000000f: 0200                                       ; num local f32
 0000011: 0000                                       ; num local f64
 0000013: 0000                                       ; func body size
-0000015: 0f                                         ; OPCODE_SET_LOCAL
-0000016: 00                                         ; remapped local index
-0000017: 09                                         ; OPCODE_I8_CONST
-0000018: 00                                         ; u8 literal
-0000019: 0f                                         ; OPCODE_SET_LOCAL
-000001a: 01                                         ; remapped local index
-000001b: 0d                                         ; OPCODE_F32_CONST
-000001c: 0000 0000                                  ; f32 literal
-0000020: 0f                                         ; OPCODE_SET_LOCAL
-0000021: 03                                         ; remapped local index
-0000022: 0b                                         ; OPCODE_I64_CONST
-0000023: 0000 0000 0000 0000                        ; u64 literal
-000002b: 0f                                         ; OPCODE_SET_LOCAL
-000002c: 04                                         ; remapped local index
-000002d: 0d                                         ; OPCODE_F32_CONST
-000002e: 0000 0000                                  ; f32 literal
-0000032: 0f                                         ; OPCODE_SET_LOCAL
-0000033: 02                                         ; remapped local index
-0000034: 09                                         ; OPCODE_I8_CONST
-0000035: 00                                         ; u8 literal
-0000036: 0f                                         ; OPCODE_SET_LOCAL
-0000037: 05                                         ; remapped local index
-0000038: 0d                                         ; OPCODE_F32_CONST
-0000039: 0000 0000                                  ; f32 literal
+0000015: 09                                         ; OPCODE_I8_CONST
+0000016: 00                                         ; u8 literal
+0000017: 0f                                         ; OPCODE_SET_LOCAL
+0000018: 00                                         ; remapped local index
+0000019: 0d                                         ; OPCODE_F32_CONST
+000001a: 0000 0000                                  ; f32 literal
+000001e: 0f                                         ; OPCODE_SET_LOCAL
+000001f: 01                                         ; remapped local index
+0000020: 0b                                         ; OPCODE_I64_CONST
+0000021: 0000 0000 0000 0000                        ; u64 literal
+0000029: 0f                                         ; OPCODE_SET_LOCAL
+000002a: 03                                         ; remapped local index
+000002b: 0d                                         ; OPCODE_F32_CONST
+000002c: 0000 0000                                  ; f32 literal
+0000030: 0f                                         ; OPCODE_SET_LOCAL
+0000031: 04                                         ; remapped local index
+0000032: 09                                         ; OPCODE_I8_CONST
+0000033: 00                                         ; u8 literal
+0000034: 0f                                         ; OPCODE_SET_LOCAL
+0000035: 02                                         ; remapped local index
+0000036: 0d                                         ; OPCODE_F32_CONST
+0000037: 0000 0000                                  ; f32 literal
+000003b: 0f                                         ; OPCODE_SET_LOCAL
+000003c: 05                                         ; remapped local index
 0000013: 2800                                       ; FIXUP func body size
 000003d: 06                                         ; WASM_SECTION_END
 ;; dump
 0000000: 0101 0200 0103 0201 0400 0001 0001 0002  
-0000010: 0000 0028 000f 0009 000f 010d 0000 0000  
-0000020: 0f03 0b00 0000 0000 0000 000f 040d 0000  
-0000030: 0000 0f02 0900 0f05 0d00 0000 0006       
+0000010: 0000 0028 0009 000f 000d 0000 0000 0f01  
+0000020: 0b00 0000 0000 0000 000f 030d 0000 0000  
+0000030: 0f04 0900 0f02 0d00 0000 000f 0506       
 ;;; STDOUT ;;)
