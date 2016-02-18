@@ -1,14 +1,6 @@
-;;; ERROR: 1
 ;;; EXE: test/run-d8.py
 ;;; FLAGS: --spec
 ;;; STDIN_FILE: third_party/testsuite/select.wast
-(;; STDERR ;;;
-
-;;; STDERR ;;)
 (;; STDOUT ;;;
-WasmModule::Instantiate(): Compiling WASM function #4:select_trap_l failed:Result = type mismatch in select @+5
-
-  var module = _WASMEXP_.instantiateModule(u8a.buffer, ffi);
-                         ^
-
+28/28 tests passed.
 ;;; STDOUT ;;)
